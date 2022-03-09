@@ -1,0 +1,343 @@
+<html>
+<head>
+<title>V视界——动漫</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+a:link {
+	text-decoration: none;
+	color: #000;
+}
+a:visited {
+	text-decoration: none;
+	color: #000;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+</style>
+<script src="../js/jquery.min2.js"></script>
+<script type="text/javascript">
+	$(function() {
+		var i = 0; //初始变量
+		var k = 0; //初始变量
+		var h = 5; //默认第一个内容条数
+		//分类tap
+		$('.industry').hover(function() {
+			i = $(this).index(); //当前索引
+			$(this).addClass('active').siblings().removeClass('active');
+			$('.case-panel').eq(i).addClass('active').siblings().removeClass('active');
+			h = $('.case-panel').eq(i).find('.image-hover').length; //获取内容条数
+		})
+		//内容tap
+		$('.case-panel .image-hover').hover(function() {
+			var j = $(this).index();
+			var src = $(this).attr('data-qrcode'); //data-qrcode属性里面是二维码的图片
+			var title = $(this).attr('data-title'); //标题
+			var desc = $(this).attr('data-desc'); //描述
+			$(this).addClass('active').siblings().removeClass('active');
+			$(this).parents('.case-panel').find('.phone-image').eq(j - 1).addClass('active').siblings().removeClass('active');
+			$(this).parents('.case-panel').find('.phone-image-cover').find('img').attr('src', src);
+			$(this).parents('.case-panel').find('.case-head').text(title);
+			$(this).parents('.case-panel').find('.case-text').text(desc);
+			
+		})
+		//自动执行,间隔5秒
+		setInterval(function() {
+			$('.case-panel').eq(i).find('.image-hover').eq(k).addClass('active').siblings().removeClass('active');
+			$('.case-panel').eq(i).find('.phone-image').eq(k).addClass('active').siblings().removeClass('active');
+			k >= h - 1 ? k = 0 : k++;
+		}, 5000)
+	})
+</script>
+<link href="../css/style-dm.css" rel="stylesheet" type="text/css">
+</head>
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<div align="center" class="bigbox">
+ <div align="center">
+ <!-- Save for Web Slices (dh.psd) -->
+ <table id="__01" width="1050" height="100" border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td><img src="../images/index_01.png" width="114" height="100" alt="V视界" title="V视界"></td>
+		<td>
+			<img src="../images/index_02.png" width="1" height="100" alt=""></td>
+		<td>
+			<div class="ssk">
+			  <div align="center" class="ssks">
+			    <input type="text" name="search" placeholder="请输入关键字">
+		      </div>
+            </div>
+        </td>
+		<td>
+			<img src="../images/index_04.png" width="1" height="100" alt=""></td>
+		<td>
+		  <img src="../images/index_05.png" width="84" height="100" alt="热搜榜" title="热搜榜"></td>
+		<td>
+			<img src="../images/index_06.png" width="1" height="100" alt=""></td>
+		<td>
+			<input type="image" src="../images/index_07.png" alt="搜索" title="搜索"></td>
+		<td>
+			<img src="../images/index_08.png" width="1" height="100" alt=""></td>
+		<td><a href="dl.html"><img src="../images/index_09.png" width="52" height="100" alt="登录" title="登录"></a></td>
+		<td>
+			<img src="../images/index_10.png" width="1" height="100" alt=""></td>
+		<td><a href="vip.html"><img src="../images/index_11.png" width="59" height="100" alt="VIP" title="VIP"></a></td>
+		<td>
+			<img src="../images/index_12.png" width="1" height="100" alt=""></td>
+		<td>
+			<img src="../images/index_14.png" width="1" height="100" alt=""></td>
+		<td><a href="#"><img src="../images/index_13.png" width="62" height="100" alt="消息" title="消息"></a><a href="#"><img src="../images/index_15.png" width="61" height="100" alt="我的空间" title="我的空间"></a></td>
+		<td>
+			<img src="../images/index_16.png" width="1" height="100" alt=""></td>
+		<td><a href="#"><img src="../images/index_17.png" width="58" height="100" alt="动态" title="动态"></a></td>
+		<td>
+			<img src="../images/index_18.png" width="1" height="100" alt=""></td>
+		<td><a href="#"><img src="../images/index_19.png" width="61" height="100" alt="历史记录" title="历史记录"></a></td>
+		<td>
+			<img src="../images/index_20.png" width="1" height="100" alt=""></td>
+		<td><a href="#"><img src="../images/index_21.png" width="60" height="100" alt="我的收藏" title="我的收藏"></a></td>
+		<td>
+			<img src="../images/index_22.png" width="1" height="100" alt=""></td>
+		<td><a href="../20183809 龚情 实验八.rar"><img src="../images/index_23.png" width="62" height="100" alt="下载" title="下载"></a></td>
+		<td>
+			<img src="../images/index_24.png" width="1" height="100" alt=""></td>
+		<td><a href="#"><img src="../images/index_25.png" width="61" height="100" alt="投稿" title="投稿"></a></td>
+		<td>
+			<img src="../images/index_26.png" width="1" height="100" alt=""></td>
+		<td><img src="../images/index_27.png" width="51" height="100" alt=""></td>
+	</tr>
+ </table>
+ <!-- End Save for Web Slices -->
+ </div>
+ <div class="nav">
+   <div class="nav_con">
+    <ul> 
+     <li><a href="../index.html">首页</a></li> 
+     <li><a href="#">动漫</a></li> 
+     <li><a href="dy.html">电影</a></li> 
+     <li><a href="dsj.html">电视剧</a></li>
+     <li><a href="zc.html">综艺</a></li>
+     <li><a href="jlp.html">纪录片</a></li>
+     <li><a href="se.html">少儿</a></li> 
+    </ul>
+   </div>
+  </div>
+ <div class="OnlineService_Bg">
+	<div class="OnlineService_Box">
+      <div class="OnlineService_Phone"><a href="#" target="_blank">在线咨询</a></div>
+		<div class="OnlineService_Sign" target="_blank" onClick="#">立即试用</div>
+		<div class="OnlineService_Top"><a href="#">返回顶部</a></div>
+    </div>
+ </div>
+ <div class="bodyCon08"><!--图片-->
+	<div class="pic">	
+		<div id="four_flash">
+		  <div class="flashBg">
+			  <ul class="mobile">
+					<li>
+                       <a href="#"><img src="../images/dm/nt5.jpg" /></a>
+					   <p><a href="#">那年那兔那些事儿 第五季</a></p>
+					</li>
+					<li> 
+                       <a href="#"><img src="../images/dm/gmzr.jpg" /></a>
+					   <p><a href="#">鬼灭之刃</a></p>
+					</li>
+					<li>
+                       <a href="#"><img src="../images/dm/wlq.jpg" /></a>
+					   <p><a href="#">刺客伍六七</a></p>
+					</li>
+					<li>
+                       <a href="#"><img src="../images/dm/hy.jpg"/></a>
+					   <p><a href="#">狐妖小红娘</a></p>
+					</li>
+					<li>
+                       <a href="#"><img src="../images/dm/dwkxq.jpg"/></a>
+					   <p><a href="#">动物狂想曲</a></p>
+					</li>
+					<li>
+                       <a href="#"><img src="../images/dm/mnbjk.jpg"/></a>
+					   <p><a href="#">马男波杰克</a></p>
+					</li>
+				</ul>
+		  </div>
+		  <div class="but_left"><img src="../images/qianxleft.png" /></div>
+			<div class="but_right"><img src="../images/qianxr.png" /></div>
+	  </div>	
+	</div>
+</div>
+<script type="text/javascript" src="../js/jquery.min3.js"></script>
+<script type="text/javascript">
+var _index5=0;
+$("#four_flash .but_right img").click(function(){
+	_index5++;
+	var len=$(".flashBg ul.mobile li").length;
+	if(_index5+5>len){
+		$("#four_flash .flashBg ul.mobile").stop().append($("ul.mobile").html());
+	}
+	$("#four_flash .flashBg ul.mobile").stop().animate({left:-_index5*328},1000);
+});
+$("#four_flash .but_left img").click(function(){
+	if(_index5==0){
+		$("ul.mobile").prepend($("ul.mobile").html());
+		$("ul.mobile").css("left","-1380px");
+		_index5=6
+	}
+	_index5--;
+	$("#four_flash .flashBg ul.mobile").stop().animate({left:-_index5*328},1000);
+});
+</script>
+ <div class="card-fouth">
+    <p align="center"><font face="黑体" size="+2" color="#66CCFF">追番表</font></p>
+	<div class="desc desc-list">
+		<div class="industry first active">
+			<span>周一</span>
+		</div>
+		<div class="industry">
+			<span>周二</span>
+		</div>
+		<div class="industry">
+			<span>周三</span>
+		</div>
+		<div class="industry">
+			<span>周四</span>
+		</div>
+		<div class="industry">
+			<span>周五</span>
+		</div>
+        <div class="industry">
+			<span>周六</span>
+		</div>
+		<div class="industry last">
+			<span>周日</span>
+		</div>
+	</div>
+    <div class="case-container">
+		  <div class="case-panel tab-1 active">
+			<div class="case-preview">
+            <div class="zfb-m"><a href="#"><img src="../images/dm/sjx.jpg" width="189" height="300">更新至第9集</a></div>
+            <div class="zfb-m"><a href="#"><img src="../images/dm/jyw.jpg" width="189" height="300">更新至第8集</a></div>
+            <div class="zfb-m"><a href="#"><img src="../images/dm/mnbjk.jpg" width="189" height="300">更新至第7集</a></div>
+            </div>
+          </div>
+          <div class="case-panel tab-2 active">
+			<div class="case-preview">
+            <div class="zfb-m"><a href="#"><img src="../images/dm/bl3.jpg" width="189" height="300">更新至第2集</a></div>
+            <div class="zfb-m"><a href="#"><img src="../images/dm/nt5.jpg" width="189" height="300">更新至第3集</a></div>
+            </div>
+          </div>
+          <div class="case-panel tab-3 active">
+			<div class="case-preview">
+            <div class="zfb-m"><a href="#"><img src="../images/dm/hh.jpg" width="189" height="300">更新至第11集</a></div>
+            <div class="zfb-m"><a href="#"><img src="../images/dm/dwkxq.jpg" width="189" height="300">更新至第4集</a></div>
+            </div>
+          </div>
+          <div class="case-panel tab-4 active">
+			<div class="case-preview">
+            <div class="zfb-m"><a href="#"><img src="../images/dm/fr.jpg" width="189" height="300">更新至第12集</a></div>
+            <div class="zfb-m"><a href="#"><img src="../images/dm/wg2.jpg" width="189" height="300">更新至第10集</a></div>
+            </div>
+          </div>
+          <div class="case-panel tab-5 active">
+			<div class="case-preview">
+            <div class="zfb-m"><a href="#"><img src="../images/dm/hy.jpg" width="189" height="300">更新至第111集</a></div>
+            <div class="zfb-m"><a href="#"><img src="../images/dm/tx1.jpg" width="189" height="300">更新至第5集</a></div>
+            <div class="zfb-m"><a href="#"><img src="../images/dm/md.jpg" width="189" height="300">更新至第6集</a></div>
+            <div class="zfb-m"><a href="#"><img src="../images/dm/xh7.jpg" width="189" height="300">更新至第7集</a></div>
+            </div>
+          </div>
+          <div class="case-panel tab-6 active">
+			<div class="case-preview">
+            <div class="zfb-m"><a href="#"><img src="../images/dm/dl2.jpg" width="189" height="300">更新至第38集</a></div>
+            <div class="zfb-m"><a href="#"><img src="../images/dm/ll2.jpg" width="189" height="300">更新至第4集</a></div>
+            <div class="zfb-m"><a href="#"><img src="../images/dm/qz1.jpg" width="189" height="300">更新至第9集</a></div>
+            </div>
+          </div>
+          <div class="case-panel tab-7 active">
+			<div class="case-preview">
+            <div class="zfb-m"><a href="#"><img src="../images/dm/dp3.jpg" width="189" height="300">更新至第8集</a></div>
+            <div class="zfb-m"><a href="#"><img src="../images/dm/qs5.jpg" width="189" height="300">更新至第74集</a></div>
+            <div class="zfb-m"><a href="#"><img src="../images/dm/gmzr.jpg" width="189" height="300">更新至第23集</a></div>
+            </div>
+          </div>
+    </div>
+    <div class="middle-box">
+    <p align="left"><font face="楷体" size="+2" color="#66CCFF">强势接档</font></p>
+     <div class="small-box">
+      <div class="xs-box"> 档期未定<a href="#"><img src="../images/dm/zh2.jpg" width="189" height="300">镇魂街 第二季</a> </div>
+     </div>
+     <div class="small-box">
+      <div class="xs-box"> 档期未定<a href="#"><img src="../images/dm/yr2.jpg" width="189" height="300">一人之下2 风起云涌</a> </div>
+     </div>
+     <div class="small-box">
+      <div class="xs-box"> 档期未定<a href="#"><img src="../images/dm/sl3.jpg" width="189" height="300">十万个冷笑话</a> </div>
+     </div>
+      <div class="small-box">
+      <div class="xs-box"> 档期未定<a href="#"><img src="../images/dm/whyq3.jpg" width="189" height="300">文豪野犬 第三季 文豪ストレイドッグス 第3シーズン</a> </div>
+     </div>
+   </div>
+   <div class="middle-box">
+    <p align="left"><font face="楷体" size="+2" color="#66CCFF">热播国漫</font></p>
+     <div class="small-box">
+      <div class="xs-box"><a href="#"><img src="../images/dm/wlq.jpg" width="189" height="300">刺客伍六七</a> </div>
+     </div>
+     <div class="small-box">
+      <div class="xs-box"><a href="#"><img src="../images/dm/hy.jpg" width="189" height="300">狐妖小红娘</a> </div>
+     </div>
+     <div class="small-box">
+      <div class="xs-box"><a href="#"><img src="../images/dm/dl2.jpg" width="189" height="300">斗罗大陆</a> </div>
+     </div>
+     <div class="small-box">
+      <div class="xs-box"><a href="#"><img src="../images/dm/dp3.jpg" width="189" height="300">斗破苍穹 第三季</a> </div>
+     </div>
+     <div class="small-box">
+      <div class="xs-box"><a href="#"><img src="../images/dm/nt5.jpg" width="189" height="300">那年那兔那些事儿 第五季</a> </div>
+     </div>
+   </div> 
+   <div class="middle-box">
+    <p align="left"><font face="楷体" size="+2" color="#66CCFF">热播番剧</font></p>
+     <div class="small-box">
+      <div class="xs-box"><a href="#"><img src="../images/dm/dll.jpg" width="189" height="300">多罗罗 どろろ</a> </div>
+     </div>
+     <div class="small-box">
+      <div class="xs-box"><a href="#"><img src="../images/dm/gmzr.jpg" width="189" height="300">鬼灭之刃 鬼滅の刃</a> </div>
+     </div>
+     <div class="small-box">
+      <div class="xs-box"><a href="#"><img src="../images/dm/hydxj.jpg" width="189" height="300"><font size="-2">辉夜大小姐想让我告白：天才们的恋爱头脑战 第一季 かぐや様は告らせたい～天才たちの恋愛頭脳戦～</font></a> </div>
+     </div>
+     <div class="small-box">
+      <div class="xs-box"><a href="#"><img src="../images/dm/dwkxq.jpg" width="189" height="300">动物狂想曲 BEASTARS</a> </div>
+     </div>
+     <div class="small-box">
+      <div class="xs-box"><a href="#"><img src="../images/dm/gmtx.jpg" width="189" height="300">擅长捉弄的高木同学 第二季 からかい上手の高木さん 2期</a> </div>
+     </div>
+   </div> 
+   <div class="middle-box">
+    <p align="left"><font face="楷体" size="+2" color="#66CCFF">经典回顾</font></p>
+     <div class="small-box">
+      <div class="xs-box"><a href="#"><img src="../images/dm/hmjz.jpg" width="189" height="300">黑猫警长</a> </div>
+     </div>
+     <div class="small-box">
+      <div class="xs-box"><a href="#"><img src="../images/dm/hmltqxz.jpg" width="189" height="300">虹猫蓝兔七侠传</a> </div>
+     </div>
+     <div class="small-box">
+      <div class="xs-box"><a href="#"><img src="../images/dm/dtezhxtbb.jpg" width="189" height="300">大头儿子和小头爸爸</a> </div>
+     </div>
+     <div class="small-box">
+      <div class="xs-box"><a href="#"><img src="../images/dm/hlw.jpg" width="189" height="300">葫芦兄弟</a> </div>
+     </div>
+     <div class="small-box">
+      <div class="xs-box"><a href="#"><img src="../images/dm/nzcq.jpg" width="189" height="300">哪吒传奇</a> </div>
+     </div>
+  </div>  
+ <div class="dilang" align="center">
+ <p align="center">友情链接&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">关于我们</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="mailto:2237514766@qq.com">联系我们</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:window.external.addFavorite('file:///E:/20183809%E9%BE%9A%E6%83%85/vtv/index.html','V视界——带你看世界')">收藏本站</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" onClick="this.style.behavior='url(#default#homepage)';this.setHomePage('file:///E:/20183809%E9%BE%9A%E6%83%85/vtv/index.html')">设为首页&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:window.close()">关闭窗口</a></p>
+ <p> 赣网文[2017]6138-1456号 | 增值电信业务经营许可证：赣B2-20090059 | 赣公网安备 44030002000001号 </p>
+ <p><a href="#">中国互联网举报中心 网络举报APP下载</a> <a href="#">反盗版和反盗链权利声明</a> 违法和不良信息举报电话：400-923-7171 举报邮箱：<a href="#">jubao365@vtv.com</a></p>
+<p> Copyright © 2019 <a href="#">V视界</a> All Rights Reserved</p> 
+ </div>
+</div>
+</body>
+</html>

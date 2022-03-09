@@ -1,0 +1,213 @@
+@charset "utf-8";
+/* CSS Document */
+.bigbox{
+	height: 1000px;
+	width: 1200px;
+	border: 1px solid #FFF;
+	background-color:#Fff;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+}
+.btn {
+	background-image:url(../images/index_07.png);
+	width:52px;
+	height:100px;
+}
+.ssk {
+	background-image:url(../images/index_03.png);
+	width:189;
+	height:100;
+	display:table-cell;
+    vertical-align:middle;
+    text-align: center;
+}
+.ssks {
+width: 180;
+margin:auto;
+display:inline-block;
+}
+.nav{
+	width:1000px;
+	height:50px;
+	border:#6CF solid 1px;
+	background-color:#6CF;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	line-height:40px;
+}
+.nav ul{ 
+    width:1000px; 
+ 	list-style:none;
+	margin:0px 0px 0px 60px;
+}
+
+.nav ul li a{
+	color:#FF0;
+	font-weight:bold;
+	padding:0px 15px;
+	float:left;
+	text-decoration: none;
+}
+ 
+.nav ul li a:hover{
+	padding:0px 15px 0px 13px;
+	float:left;
+	color:#FF0;
+	background-color:#F00;
+	
+}
+.nav ul li a:link {
+	font-size: 30px;
+	color:#FF0;
+	text-decoration: none;
+}
+.nav ul li{
+	display:inline;
+}
+.dl-box{
+	width:1000px;
+}
+.dlzl{
+	width:400px;
+	height:400px;
+	float:left;
+	margin-top:5px;
+	margin-left:5px;
+}
+.dlyl{
+	width:400px;
+	height:500px;
+	float:left;
+	margin-top:5px;
+	margin-left:5px;
+}
+.zh{
+	background-image:;
+	margin-top:10px;
+	height:50px;
+	width:500px;
+	float:left;
+}
+.mima{
+	background-image:;
+	margin-top:10px;
+	height:50px;
+	width:500px;
+	float:left;
+}
+.an{
+	margin-top:10px;
+	height:50px;
+	width:500px;
+	float:left;
+}
+.gx{
+	height:50px;
+	width:400px;
+	margin-left:5px;
+	float:left;
+}
+.dl{
+	margin-top:10px;
+	width:200px;
+	height:50px;
+	float:left;
+}
+.zc{
+	margin-left:20px;
+	margin-top:10px;
+	width:200px;
+	height:50px;
+	float:left;
+}
+.qt{
+	float:left;
+	width:500px;
+	height:50px;
+	margin-top:20px;
+}
+.dilang{
+	width:1200px;
+	height:170px;
+	border:#FFF solid 1px;
+	margin-top:10px;
+	margin-left:auto;
+	margin-right:auto;
+	background-color:#999;
+	float:left;
+}
+/*右边滑动栏*/
+/*在线客服*/
+.OnlineService_Bg {
+	width:100px;
+	overflow:hidden;
+	position:fixed;
+	right:10px;
+	bottom:20px;
+	z-index:10;
+	}
+.OnlineService_Box {
+	width:100%;
+	overflow:hidden;
+}
+.OnlineService_Phone {
+	width:90px;
+	height:90px;
+	margin-bottom:10px;
+}
+.OnlineService_Phone a {
+	display:block;
+	width:90px;
+	height:33px;
+	background-color:#6CF;
+	padding-top:57px;
+	line-height:30px;
+	font-size:16px;
+	text-align:center;
+	color:#FF3;
+	background-image:url(../images/icon_Online.png);
+	background-repeat:no-repeat;
+	background-position:center 8px;
+	cursor:pointer;
+	text-decoration:none;
+	color:#FF3;
+}
+.OnlineService_Sign {
+	width:90px;
+	height:33px;
+	margin-bottom:10px;
+	background-color:#6CF;
+	padding-top:57px;
+	line-height:30px;
+	font-size:16px;
+	text-align:center;
+	color:#FF3;
+	cursor:pointer;
+	background-image:url(../images/icon_Sign.png);
+	background-repeat:no-repeat;
+	background-position:center 10px;
+}
+.OnlineService_Top {
+	width:90px;
+	height:90px;
+	margin-bottom:10px;
+}
+.OnlineService_Top a {
+	display:block;
+	width:90px;
+	height:33px;
+	background-color:#6CF;
+	padding-top:57px;
+	line-height:30px;
+	font-size:16px;
+	text-align:center;
+	color:#FF3;
+	background-image:url(../images/icon_Top.png);
+	background-repeat:no-repeat;
+	background-position:center 8px;
+	cursor:pointer;
+	text-decoration:none;
+	color:#FF3;
+}	
